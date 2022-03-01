@@ -1,0 +1,9 @@
+{
+    "name":"PrimesNumber",
+    "description":"Count the number of primes number between a range",
+    "parameters":{
+        "min":0,
+        "max":25001
+    }
+       
+}
