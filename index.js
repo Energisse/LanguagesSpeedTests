@@ -2,9 +2,14 @@ import { spawnSync } from "child_process";
 import fs from "fs";
 import colors from "colors";
 
-
-
-
+if(!Array.prototype.at){
+    Array.prototype.at = function (index){
+        if(index < 0){
+            return this[this.length+index];
+        }
+        return this[index];
+    }
+}
 
 class BaseLanguage {
     constructor(name){
